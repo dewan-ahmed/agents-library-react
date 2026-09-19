@@ -9,4 +9,12 @@ export default defineConfig({
       "@catalog": fileURLToPath(new URL("./catalog", import.meta.url)),
     },
   },
+  server: {
+    host: "127.0.0.1",
+    port: 3000,
+  },
+  preview: {
+    host: "127.0.0.1",
+    port: 3000,
+  },
 });
