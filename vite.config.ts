@@ -12,9 +12,12 @@ export default defineConfig({
   server: {
     host: "127.0.0.1",
     port: 3000,
+    // Vibe's preview proxy sends a non-localhost Host header.
+    allowedHosts: true,
   },
   preview: {
     host: "127.0.0.1",
     port: 3000,
+    allowedHosts: true,
   },
 });
